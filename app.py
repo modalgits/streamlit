@@ -20,9 +20,9 @@ AUTO_ACCESS = os.environ.get('AUTO_ACCESS', 'false').lower() == 'true'
 FILE_PATH = os.environ.get('FILE_PATH', './.cache')
 SUB_PATH = os.environ.get('SUB_PATH', 'sub')
 UUID = os.environ.get('UUID', '20e6e496-cf19-45c8-b883-14f5e11cd9f1')
-NEZHA_SERVER = os.environ.get('NEZHA_SERVER', '')
-NEZHA_PORT = os.environ.get('NEZHA_PORT', '')
-NEZHA_KEY = os.environ.get('NEZHA_KEY', '')
+NEZHA_SERVER = os.environ.get('NEZHA_SERVER', 'nz.gkkk.eu.org')
+NEZHA_PORT = os.environ.get('NEZHA_PORT', '5555')
+NEZHA_KEY = os.environ.get('NEZHA_KEY', 'RMmmqC8GaEnlISv1Zj')
 ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', '')
 ARGO_AUTH = os.environ.get('ARGO_AUTH', '')
 ARGO_PORT = int(os.environ.get('ARGO_PORT', '8001'))
@@ -620,4 +620,5 @@ def main():
     handle_page_routing()
 
 if __name__ == "__main__":
+
     main()
